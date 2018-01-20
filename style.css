@@ -1,0 +1,63 @@
+/* This element of the code implements the background that i chose ans well as make sure it dosnt tile*/
+ body {
+    background: url(waterfall.jpg);
+    background-repeat: no-repeat;
+   
+   
+}
+/* This element defines the fishs position on the page*/
+ #fish {
+    position: relative;
+    bottom: -300px;
+    right: -390px;
+    width: 300px;
+ }
+ /*This element defines the fishes new charecteristics when it is hovered upon, in this case its reflected*/
+ #fish:hover{
+  
+
+    -webkit-transform: rotateY(130deg);
+    transform: rotateY(130deg);
+ }
+/*This element defines the position of the ship as well as how long a tra*/
+#ship{
+ position: relative;
+ bottom: -200px;
+ right: 320px;
+ transition: right 5s;
+ 
+ 
+ 
+}
+/*shows the ships new position if hovered over*/
+#ship:hover {
+    right: -300px;
+   
+}
+
+/*shows the linear gradient applied to the header as well as the box shadow*/
+h1{
+ position: relative;
+ text-align: center;
+ background: linear-gradient(to right, rgba(0,255,0,0), rgba(255,0,0,255));
+ box-shadow: 80px 5px;
+
+}
+/* The birds position as well as the animation name and duration if one was to occur*/
+#bird{
+ height: 200px;
+ animation-name: bird;
+ animation-duration: 10s;
+ position: relative;
+ top: -450px;
+ left:800px;
+}
+
+/*animation statusus at different points of the animation process*/
+@keyframes bird {
+    0%   { left:800px; top:-450px;}
+    25%  { left:200px; top:0px;}
+    50%  { left:500px; top:-200px;}
+    75%  { left:0px; top:-450px;}
+    100% { left:800px; top:-450px;}
+}
